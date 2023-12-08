@@ -1,0 +1,30 @@
+.sen {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+.Resource {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vmax;
+  justify-content: center;
+  align-items: center;
+}
+@media (width<600px) {
+  .Resource {
+    flex-direction: column;
+  }
+  .ChangePass {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pro-del {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

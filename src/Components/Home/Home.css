@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.design {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5vh;
+  padding-right: 5vmax;
+  height: 100vh;
+}
+.design img {
+  height: 35vmax;
+}
+.con p {
+  font-size: 5vmax;
+  font-weight: 500;
+}
+.con {
+  width: 60%;
+  padding-left: 5vw;
+}
+.con p span {
+  color: #00b6ff;
+}
+.con button {
+  margin-top: 10px;
+  height: 3.5vmax;
+  width: 7.5vmax;
+  font-size: 1.5vmax;
+  font-weight: 500;
+  background-color: #e93236;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  transition: all 0.5s;
+}
+.con button:hover {
+  box-shadow: 3px 3px 0px 2px #ffb500;
+  transform: translateY(-3px);
+  transform: translateX(-3px);
+}
+.Courses {
+  position: relative;
+  padding: 10vh 20px 10px 20px;
+  height: 100vh;
+}
+.head {
+  position: absolute;
+  padding: 10px 50px 10px 50px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  border-bottom: 1px solid #00b6ff;
+  text-align: center;
+}
+.course-con {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3vh;
+  gap: 5vw;
+  justify-content: center;
+}
+.slide {
+  background-color: #8b51fe;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px 20px 15px;
+  transition: all 0.5s;
+  z-index: 1;
+}
+.slide ul li {
+  margin: 5px;
+  height: 40px;
+  padding: 5px;
+  font-size: 2vmax;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  width: calc(100% - 20px);
+  color: #fff;
+}
+.slide ul a {
+  text-decoration: none;
+  color: #000;
+}
+.slide ul li:hover {
+  background-color: #5d25cd;
+}
+@media (max-width: 600px) {
+  .design {
+    flex-direction: column;
+    justify-content: normal;
+    gap: 1vmax;
+    align-items: center;
+  }
+  .con {
+    width: 100%;
+    padding-left: 5vw;
+  }
+  .Courses {
+    height: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+.about img {
+  height: 25vmax;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 5vmax 0 5vmax;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.about-text h1 {
+  font-size: 5vmax;
+  font-weight: 500;
+  color: #019cf8;
+}
+.about-text p {
+  font-size: 1.5vmax;
+}
+.about-text button {
+  width: 8vmax;
+  height: 3vmax;
+  background-color: #006bdf;
+  font-size: 1.3vmax;
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.social {
+  display: flex;
+  gap: 1.5vmax;
+}
+.social a {
+  color: #000;
+  font-size: 2vmax;
+}
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .about-text {
+    width: 100%;
+    padding: 5vmax;
+  }
+}

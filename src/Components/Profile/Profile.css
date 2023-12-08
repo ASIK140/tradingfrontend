@@ -1,0 +1,160 @@
+.img {
+  height: 15vmax;
+  width: 15vmax;
+  border-radius: 50%;
+  background-color: #749b;
+  background: url("../../assets/man.png");
+  background-position: center;
+  background-size: cover;
+}
+.avtar h1 {
+  text-align: center;
+}
+.avtar {
+  background-color: #8b51fe;
+  height: 100vh;
+}
+.profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4vmax;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 25vmax;
+}
+.details label {
+  font-size: 1.7vmax;
+  font-weight: 500;
+}
+.details input {
+  height: 3vmax;
+  font-size: 1.4vmax;
+  margin-bottom: 1.5vmax;
+  padding-left: 2px;
+  outline: none;
+}
+.upbtn {
+  height: 3vmax;
+  width: 10vmax;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: #8b51fe;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.3vmax;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav button {
+  height: 3vmax;
+  border: none;
+  background-color: #8b51fe;
+  font-size: 1.3vmax;
+  font-weight: 500;
+  color: #e8e6e6;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: start;
+  padding-left: 1vmax;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav button:hover {
+  background-color: #702bfa;
+}
+.sec {
+  position: relative;
+  background: transparent;
+  display: flex;
+  width: 100%;
+}
+.menu-icon {
+  position: absolute;
+  top: 1vmax;
+  right: 1vmax;
+}
+.menu-icon button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.menu-icon button svg {
+  font-size: 2.2vmax;
+}
+.home-btn {
+  position: absolute;
+  top: 1vmax;
+  left: 1vmax;
+}
+.home-btn button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.home-btn button svg {
+  font-size: 2.2vmax;
+}
+@media (width<600px) {
+  .sec {
+    flex-direction: column;
+  }
+  .home-btn button {
+    color: #8b51fe;
+  }
+  .home-btn button svg {
+    font-size: 4vmax;
+  }
+  .menu-icon button svg {
+    font-size: 4vmax;
+  }
+  .details {
+    width: 30vmax;
+  }
+  .nav-hide {
+    display: none;
+  }
+  .avtar {
+    background: transparent;
+    height: 100%;
+  }
+  .nav button {
+    height: 5vmax;
+    text-align: start;
+    padding-left: 2vmax;
+    font-size: 1.5vmax;
+    border: 1px solid #8b51fe;
+  }
+}
+
+@media (width>600px) {
+  .menu-icon {
+    display: none;
+  }
+  .pro-nav {
+    display: none;
+  }
+  .home-btn button {
+    color: #ffff;
+  }
+}
+.page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 5vmax;
+}
+
+.pro-nav {
+  position: absolute;
+  left: 0;
+  width: 60vw;
+  transition: all 0.5s;
+  z-index: 1;
+}

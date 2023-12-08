@@ -1,0 +1,54 @@
+.ser-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 22vmax;
+  width: 22vmax;
+  gap: 1vmax;
+  transition: all 0.5s;
+  border: 1px solid rgba(91, 150, 253, 0.444);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(91, 150, 253, 0.353);
+}
+.ser-card:hover {
+  transform: translateY(-5px);
+}
+
+.ser-img img {
+  height: 12vmax;
+}
+
+.ser-title h3 {
+  font-size: 1.7vmax;
+  font-weight: 500;
+}
+.ser-btn button {
+  height: 2.5vmax;
+  width: 7vmax;
+  font-size: 1.2vmax;
+  background-color: #006bdf;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.services {
+  width: 100vw;
+  height: 100vh;
+}
+.services h1 {
+  font-size: 2.3vmax;
+  font-weight: 500;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  gap: 1vmax;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+  padding: 2vmax;
+}
